@@ -1,0 +1,36 @@
+<aiml version="1.0" encoding="UTF-8">
+    <category>
+        <pattern>笨蛋</pattern>
+        <template>我是很笨哦，聪明的话就不跟你聊天了.</template>
+    </category>
+    <category>
+        <pattern>猫</pattern>
+        <template>说喵星人干什么？</template>
+    </category>
+    <category>
+        <pattern>点击</pattern>
+        <template>拿着鼠标，轻轻按下鼠标左键就可以了</template>
+    </category>
+    <category>
+        <pattern>杭州</pattern>
+        <template>杭州位于中国东南沿海，浙江省省会，浙江省政治、经济、文化中心，中国东南重要交通枢纽，中国最大的经济圈——长江三角洲地区重要的第二大中心城市</template>
+    </category>
+    <category>
+        <pattern>重庆</pattern>
+        <template>山城啊，重庆的妹妹很漂亮啊</template>
+    </category>
+        <category>
+        <pattern>成都</pattern>
+        <template>成都位于中国四川省中部，是四川省省会，中国副省级城市之一，四川省政治、经济、文教中心，国家经济与社会发展计划单列市，也是国家历史文化名城.</template>
+    </category>
+    <category>
+    <pattern>几点了</pattern>
+    <template>
+        现在是：<system>date</system>
+    </template>
+    </category>
+    <category>
+    <pattern>你能跟我说一样的话吗</pattern>
+    <template><input /></template>
+    </category>
+</aiml>

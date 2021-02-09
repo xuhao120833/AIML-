@@ -1,0 +1,102 @@
+<aiml version="1.0" encoding="UTF-8">
+<category>
+	<pattern>好想旅游*</pattern>
+	<template>你想去哪里？</template>
+</category>
+<category>
+	<pattern>想去镇江</pattern>
+	<that>你想去哪里？</that>
+	<template>镇江有什么好玩的地方？</template>
+</category>
+<category>
+	<pattern>我听说镇江有三座山很出名</pattern>
+	<that>镇江有什么好玩的地方？</that>
+	<template>我给主人百度一下</template>
+</category>
+<category>
+	<pattern>好的好的</pattern>
+	<that>我给主人百度一下</that>
+	<template>镇江三山风景名胜区地处江苏省西南部，长江下游南岸，具有“真山真水”的独特风貌。由金山风景区、焦山风景区、北固山风景区组成风景各异的三山风景区为国家AAAAA级旅游景区。</template>
+</category>
+<category>
+	<pattern>先给我介绍下金山*</pattern>
+	<template>金山位于镇江市西北，海拔43.7米，占地面积41.6公顷。金山风景幽绝，形胜天然，自古为我国游览胜地之一。古代金山原是屹立于长江中流的一个岛屿，有"江心一朵美芙蓉"之称誉。唐代张祜描述为"树影中流见，钟声两岸闻"；北宋沈括赞颂曰："楼台两岸水相连，江北江南镜里天。"，原为扬子江中的一个岛屿，由于“大江东流”，至清光绪末年（1903年）左右与陆地连成一片。</template>
+</category>
+<category>
+	<pattern>听起来不错，焦山呢？</pattern>
+	<that>金山位于镇江市西北，海拔43.7米，占地面积41.6公顷。金山风景幽绝，形胜天然，自古为我国游览胜地之一。古代金山原是屹立于长江中流的一个岛屿，有"江心一朵美芙蓉"之称誉。唐代张祜描述为"树影中流见，钟声两岸闻"；北宋沈括赞颂曰："楼台两岸水相连，江北江南镜里天。"，原为扬子江中的一个岛屿，由于“大江东流”，至清光绪末年（1903年）左右与陆地连成一片。</that>
+	<template>焦山是长江中四面环水的岛屿，山高70.7米，周长2000余米，因东汉焦光隐居山中而得名。碧波环抱，林木蓊郁，绿草如茵，满山苍翠，宛然碧玉浮江。与对岸象山夹江对峙，正所谓“万川东注，一岛中立”，有江南“水上公园”之喻，被誉为“江中浮玉”。身临其境，确有“砥柱中流”之感，好似登上普陀仙岛，游人慕名而至。</template>
+</category>
+<category>
+	<pattern>北固山呢？</pattern>
+	<that>焦山是长江中四面环水的岛屿，山高70.7米，周长2000余米，因东汉焦光隐居山中而得名。碧波环抱，林木蓊郁，绿草如茵，满山苍翠，宛然碧玉浮江。与对岸象山夹江对峙，正所谓“万川东注，一岛中立”，有江南“水上公园”之喻，被誉为“江中浮玉”。身临其境，确有“砥柱中流”之感，好似登上普陀仙岛，游人慕名而至。</that>
+	<template>焦山是长江中四面环水的岛屿，山高70.7米，周长2000余米，因东汉焦光隐居山中而得名。碧波环抱，林木蓊郁，绿草如茵，满山苍翠，宛然碧玉浮江。与对岸象山夹江对峙，正所谓“万川东注，一岛中立”，有江南“水上公园”之喻，被誉为“江中浮玉”。身临其境，确有“砥柱中流”之感，好似登上普陀仙岛，游人慕名而至。</template>
+</category>
+<category>
+	<pattern>这里面谁的风景最好呢？</pattern>
+	<template>应该是焦山吧，因为那里是个岛，里面有一条很长的银杏树小道，到了冬天超级美！</template>
+</category>
+
+<category>
+	<pattern>没有人永远会站在高峰</pattern>
+	<template>也没有人会永远处于低谷</template>
+</category>
+
+<category>
+	<pattern>失去人性失去很多</pattern>
+	<template>失去兽性失去一切</template>
+</category>
+<category> 
+<pattern>我 头 发 的 颜 色 是 蓝 色 *</pattern> 
+<template>哇塞，你很
+<condition name="用户性别" value="女"> 漂亮阿！</condition> 
+<condition name="用户性别" value="男">英俊阿！</condition> 
+</template> 
+</category>
+
+<category> 
+<pattern>我 头 发 的 颜 色 是 蓝 色 *</pattern> 
+<template>哇塞，你很
+<condition> 
+<li name="用户性别" value="女">漂亮阿！</li> 
+<li name="用户性别" value="男">英俊阿！</li> 
+</condition> 
+</template> 
+</category>
+
+<category> 
+<pattern>我 头 发 的 颜 色 是 蓝 色 *</pattern> 
+<template>哇塞，你很
+<condition name="用户性别"> 
+<li value="女"> 漂亮阿！</li> 
+<li value="男"> 英俊阿！</li> 
+</condition> 
+</template> 
+</category>
+
+<category> 
+<pattern>我 头 发 的 颜 色 是 蓝 色 *</pattern> 
+<template>哇塞，你很
+<condition> 
+<li name="用户性别" value="女"> 漂亮阿！</li> 
+<li>好看！</li> 
+</condition> 
+</template> 
+</category>
+
+<category>
+      <pattern>让我们讨论一下电影*</pattern>
+      <template>Yes <set name = "topic">movies</set></template>  
+   </category>
+   <topic name = "movies">
+      <category>
+         <pattern> * </pattern>
+         <template>Watching good movie refreshes our minds.</template>
+      </category>
+
+      <category>
+         <pattern> I LIKE WATCHING COMEDY! </pattern>
+         <template>I like comedy movies too.</template>
+      </category>
+   </topic>
+</aiml>

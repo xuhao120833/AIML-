@@ -1,0 +1,14 @@
+<aiml version="1.0.1" encoding="UTF-8">
+    <category>
+        <pattern>LOAD AIML A</pattern>
+        <template>
+            <learn>basic_chat.aiml</learn>
+            <learn>travel.aiml</learn>
+            <learn>study.aiml</learn>
+            <learn>auto-learn.aiml</learn>
+            <learn>redirection.aiml</learn>
+            <learn>resource.aiml</learn>
+            <learn>stroke.aiml</learn>
+        </template>
+    </category>
+</aiml>

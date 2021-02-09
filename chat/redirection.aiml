@@ -1,0 +1,52 @@
+<aiml version="1.0.1" encoding="UTF-8">
+  <!-- OrdinaryQuestion.aiml -->
+  <category>
+    <pattern>* KG导演了什么电影*</pattern>
+    <template>
+      <think>
+        <set name="star1"><star index="1"/></set>
+      </think>
+      #neo4j:<get name="star1" />
+    </template>
+  </category>
+
+  <category>
+    <pattern>*参演了什么电影</pattern>
+    <template>
+      <think>
+        <set name="star1"><star index="1"/></set>
+      </think>
+      @neo4j:<get name="star1" />
+    </template>
+  </category>
+
+  <category>
+    <pattern>和*合作过*</pattern>
+    <template>
+      <think>
+        <set name="star1"><star index="1"/></set>
+      </think>
+      0neo4j:<get name="star1" />
+    </template>
+  </category>
+
+  <category>
+    <pattern>*和那些导演合作过</pattern>
+    <template>
+      <think>
+        <set name="star1"><star index="1"/></set>
+      </think>
+      1neo4j:<get name="star1" />
+    </template>
+  </category>
+
+  <category>
+    <pattern>*参演的*</pattern>
+    <template>
+      <think>
+        <set name="star1"><star index="1"/></set>
+      </think>
+      2neo4j:<get name="star1" />
+    </template>
+  </category>
+</aiml>

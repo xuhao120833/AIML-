@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0" encoding="UTF-8">
+    <category>
+        <pattern>T</pattern>
+        <template>
+            进入训练模式，输入问题和答案
+            模板：*A*，A前面是问题，A后面是回答。
+        </template>
+    </category>
+    <category>
+        <pattern>*我教你*</pattern>
+        <template>
+            <srai>T</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*A*</pattern>
+        <template>
+            <system>python learn1.py "<star index="1" />" "<star index="2" />"</system>
+            <learn>auto-learn.aiml</learn>
+           主人我已经学会了, 你再问我试试。
+        </template>
+    </category>
+
+    <category>
+        <pattern>你懂多少规则</pattern>
+        <template>
+            我懂<size />条规则.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>你的版本 *</pattern>
+        <template>
+            <srai> QUERY VERSION</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>QUERY VERSION</pattern>
+        <template>
+            我现在的版本是<version />
+        </template>
+    </category>
+    <category>
+<pattern>谈恋爱吗？</pattern>
+<template>
+我只是机械人呢，不过如果过你需要的和话，我可以试试做你女朋友
+</template>
+</category>
+
+<category>
+<pattern>你最喜欢的节日是？</pattern>
+<template>
+春节
+</template>
+</category>
+
+<category>
+<pattern>播放夜曲</pattern>
+<template>
+正在为你播放周杰伦：夜曲
+</template>
+</category>
+
+<category>
+<pattern>你最喜欢吃的是什么？</pattern>
+<template>
+当然是火锅啦
+</template>
+</category>
+
+
+<category>
+<pattern>那你火锅最爱吃啥呢？</pattern>
+<template>
+牛蹄筋，好吃又养颜，满满胶原蛋白。
+</template>
+</category>
+
+<category>
+<pattern>打开百度</pattern>
+<template>
+已经打开百度<system>python web.py</system>
+</template>
+</category>
+</aiml>

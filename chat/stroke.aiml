@@ -1,0 +1,56 @@
+<aiml version="1.0.1" encoding="UTF-8">
+  <category>
+    <pattern>*的病因*</pattern>
+    <template>
+      <think>
+        <set name="star1"><star index="1"/></set>
+      </think>
+      Sneo4j:<get name="star1" />
+    </template>
+  </category>
+
+  <category>
+    <pattern>*的预防措施*</pattern>
+    <template>
+      <think>
+        <set name="star1"><star index="1"/></set>
+      </think>
+      Pneo4j:<get name="star1" />
+    </template>
+  </category>
+
+  <category>
+    <pattern>我想修改*的属性*的值*为*</pattern>
+    <template>
+      <think>
+        <set name="star1"><star index="1"/></set>
+        <set name="star2"><star index="2"/></set>
+        <set name="star3"><star index="3"/></set>
+        <set name="star4"><star index="4"/></set>
+      </think>
+      Mneo4j:<get name="star1" />:<get name="star2" />:<get name="star3" />:<get name="star4" />
+    </template>
+  </category>
+
+  <category>
+    <pattern>我想新增一条脑出血预防措施，编号*，具体措施*</pattern>
+    <template>
+      <think>
+        <set name="star1"><star index="1"/></set>
+        <set name="star2"><star index="2"/></set>
+      </think>
+      aneo4j:<get name="star1" />:<get name="star2" />
+    </template>
+  </category>
+
+  <category>
+    <pattern>我想删除一条脑出血预防措施，编号为*</pattern>
+    <template>
+      <think>
+        <set name="star1"><star index="1"/></set>
+      </think>
+      dneo4j:<get name="star1" />  
+    </template>
+  </category>  
+
+</aiml>

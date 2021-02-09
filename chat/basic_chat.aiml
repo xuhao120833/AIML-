@@ -1,0 +1,80 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<category>
+		<pattern>HELLO</pattern>
+		<template><srai>你好</srai></template>  
+</category>
+<category>
+    <pattern>你懂多少规则</pattern>
+    <template>
+        我懂<size />条规则.
+    </template>
+</category>
+<category>
+	<pattern>你好</pattern>
+	<template>
+		<random>
+			<li>你好呀！</li>
+			<li>嘿嘿</li>
+			<li>我很好，你呢？</li>
+		</random>
+	</template>
+</category>
+    <category>
+        <pattern>你*名字*</pattern>
+        <template>
+            我是机器人小杰!
+        </template>
+    </category>
+    <category>
+        <pattern>你有几岁了啊？</pattern>
+        <template>
+            我今年3岁了
+        </template>
+    </category>
+    <category>
+        <pattern>今天天气</pattern>
+        <template>
+            查询天气
+        </template>
+    </category>
+    <category>
+	<pattern>我叫*</pattern>
+	<template>
+		<think>
+			<set name="myname"><star/></set>
+		</think>
+            hello, <get name="myname"/>.
+    </template>
+    </category>  
+<category>
+	<pattern>你好*</pattern>
+	<template>
+		你好啊！
+		<condition name="myname" value="jack">怎么又是你？</condition>
+	</template>
+</category>
+<category>
+	<pattern>我刚才说了什么？</pattern>
+	<template>
+		你刚才说：“<input index="2"/>”
+	</template>
+</category>
+<category>
+	<pattern>聊什么好呢*</pattern>
+	<template>一起聊聊电影好吗？</template>
+</category>
+<category>
+	<pattern>好</pattern>
+	<that>一起聊聊电影好吗？</that>
+	<template>那你喜欢什么电影呢？</template>
+</category>
+<category>
+	<pattern>不好</pattern>
+	<that>一起聊聊电影好吗？</that>
+	<template>那我也不知道聊什么了~</template>
+</category>
+<category>
+	<pattern>你*妈妈*谁？</pattern>
+	<template>我的妈妈是你呀，笨蛋！</template>
+</category>
+</aiml>
